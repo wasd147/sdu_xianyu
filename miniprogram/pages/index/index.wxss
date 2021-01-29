@@ -1,0 +1,39 @@
+page {
+  background-color: gainsboro;
+}
+
+.menu {
+
+  width: 500rpx;
+  background-color: tomato;
+}
+
+button {
+  background-color: white;
+ 
+}
+
+.goods {
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  background-color: white;
+  border-radius: 10rpx;
+  margin: 10rpx 20rpx;
+}
+
+image {
+  border-radius: 5rpx;
+  margin-left: 20rpx;
+  height: 200rpx;
+  width: 200rpx;
+
+}
+
+.goods_inf {
+  margin-left: 40rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

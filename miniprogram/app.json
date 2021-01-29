@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/demo01/demo01"
+
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "山大咸鱼",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/images/首页.png",
+      "selectedIconPath": "/images/首页 (1).png"
+
+    }, {
+      "pagePath": "pages/demo01/demo01",
+      "text": "发布",
+      "iconPath": "/images/fabu.png/",
+      "selectedIconPath": "/images/发布 (1).png"
+
+
+    }, {
+      "pagePath": "pages/demo01/demo01",
+      "text": "用户",
+      "iconPath": "/images/用户.png",
+      "selectedIconPath": "/images/用户 (1).png"
+    }]
+  }
+
+}

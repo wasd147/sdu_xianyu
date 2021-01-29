@@ -1,0 +1,14 @@
+<view>
+  <scroll-view class="menu" scroll-x="">
+    <view>数码产品</view>
+    <view>食品生鲜</view>
+    <view>二手书籍</view>
+  </scroll-view>
+  <view class="goods" wx:for="{{10}}" wx:key="index">
+    <image src="{{img}}" mode="scaleToFill"></image>
+    <view class="goods_inf">
+      <text>这是一件商品</text>
+      <text>￥30.00</text>
+    </view>
+  </view>
+</view>
