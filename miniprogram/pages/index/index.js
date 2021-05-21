@@ -4,15 +4,45 @@ Page({
    * 页面的初始数据
    */
   data: {
-    // img: "https://7364-sdujingtao-5g5x4xcdad107ba4-1304845016.tcb.qcloud.la/images/5-409.jpg?sign=869f96b6186094fd02a6b3f3fcdea7d3&t=1611903342",
-    img: "cloud://sdujingtao-5g5x4xcdad107ba4.7364-sdujingtao-5g5x4xcdad107ba4-1304845016/images/5-409.jpg"
+    kind: ["全部", "数码产品", "食品生鲜", "二手书籍", "时尚美妆", "生活用具", "体育器材", "虚拟资源", "其他"],
+    goods: [],
+  },
+  getGoods(res) {
+    //调用云函数查询数据库获取商品列表
+    wx.cloud.callFunction({
+      name: "getGoods",
+      data: {
+        kind: res.target.dataset.value,
+      }
+    }).then(res => {
+      this.setData({
+        goods: res.result.data
+      })
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.cloud.callFunction({
+      name: "getGoods",
+      data: {
+        kind: "全部",
+      }
+    }).then(res => {
+      this.setData({
+        goods: res.result.data
+      })
+    })
+  },
+  goods_detail(res) {
+    console.log(res.currentTarget.dataset.value)
+    var idx = res.currentTarget.dataset.value
+    var goods_data = JSON.stringify(this.data.goods[idx])
+    wx.navigateTo({
+      url: '/pages/goodsInf/goodsInf?value=' + goods_data,
+    })
   },
 
   /**
@@ -47,7 +77,8 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    this.onLoad()
+    wx.stopPullDownRefresh()
   },
 
   /**

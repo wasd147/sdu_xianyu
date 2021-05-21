@@ -1,14 +1,18 @@
 <view>
-  <scroll-view class="menu" scroll-x="">
-    <view>数码产品</view>
-    <view>食品生鲜</view>
-    <view>二手书籍</view>
+
+  <scroll-view class="menu" scroll-x="{{true}}">
+    <view class="item_view" hover-class="pressed_view" data-value="{{item}}" wx:for="{{kind}}" wx:key="index"
+      bindtap="getGoods">{{item}}
+    </view>
   </scroll-view>
-  <view class="goods" wx:for="{{10}}" wx:key="index">
-    <image src="{{img}}" mode="scaleToFill"></image>
+
+  <view class="goods" hover-class="pressed_goods_view" wx:for="{{goods}}" wx:key="index" bindtap="goods_detail"
+    data-value="{{index}}">
+    <image src="{{item.goodsPic[0]}}" mode="scaleToFill"></image>
     <view class="goods_inf">
-      <text>这是一件商品</text>
-      <text>￥30.00</text>
+      <text>{{item.goodsName}}</text>
+      <text>￥{{item.goodsPrice}}</text>
     </view>
   </view>
+
 </view>

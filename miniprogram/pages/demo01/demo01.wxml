@@ -1,0 +1,32 @@
+<view hidden="{{wasd}}">
+  <button open-type="getUserInfo" bindgetuserinfo="getInf">
+    点击登录
+  </button>
+</view>
+
+<view class="userInf" hidden="{{WASD_}}">
+  <image class="userImg" src="{{userImg}}"></image>
+  <view class="userName_view">
+    <text>{{userName}}</text>
+  </view>
+</view>
+
+<view hidden="{{WASD_}}">
+  <view  hover-class="pressed_view" class="item_view" bindtap="myGoods">
+    <image class="icon" src="/images/我发布的.png"></image>
+    <text>我发布的</text>
+    <image class="icon_right" src="/images/右.png"></image>
+  </view>
+
+  <view hover-class="pressed_view" class="item_view" bindtap="myCollection">
+    <image class="icon" src="/images/收藏.png"></image>
+    <text>我的收藏</text>
+    <image class="icon_right" src="/images/右.png"></image>
+  </view>
+
+  <view hover-class="pressed_view" class="item_view" bindtap="userInf">
+    <image class="icon" src="/images/基本信息.png"></image>
+    <text>我的信息</text>
+    <image class="icon_right" src="/images/右.png"></image>
+  </view>
+</view>

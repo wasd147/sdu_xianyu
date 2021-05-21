@@ -3,15 +3,30 @@ page {
 }
 
 .menu {
-
-  width: 500rpx;
-  background-color: tomato;
+  white-space: nowrap;
+  width: 100%;
+  height: 100rpx;
+  margin-top: 20rpx;
 }
 
-button {
+.item_view {
   background-color: white;
- 
+  display: inline-block;
+  margin: 20rpx 10rpx;
+
+  border-radius: 10rpx;
+  width: 180rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+
 }
+
+.pressed_view {
+  background-color: grey;
+}
+
+
 
 .goods {
   height: 200rpx;

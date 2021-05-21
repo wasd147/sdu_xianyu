@@ -41,16 +41,13 @@
   "projectname": "demo01",
   "libVersion": "2.14.1",
   "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
-      "list": []
-    },
     "plugin": {
       "list": []
     },
     "game": {
+      "list": []
+    },
+    "gamePlugin": {
       "list": []
     },
     "miniprogram": {
@@ -58,7 +55,31 @@
         {
           "id": -1,
           "name": "db guide",
-          "pathName": "pages/databaseGuide/databaseGuide"
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "pages/demo02/demo02",
+          "pathName": "pages/demo02/demo02",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/test/test",
+          "pathName": "pages/test/test",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/demo01/demo01",
+          "pathName": "pages/demo01/demo01",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/userInf/userInf",
+          "pathName": "pages/userInf/userInf",
+          "scene": null
         }
       ]
     }

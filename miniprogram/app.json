@@ -1,7 +1,14 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/demo01/demo01"
+    "pages/demo01/demo01",
+    "pages/demo02/demo02",
+    "pages/goodsInf/goodsInf",
+    "pages/userInf/userInf",
+    "pages/myGoods/myGoods",
+    "pages/myGoodsInf/myGoodsInf",
+    "pages/myCollection/myCollection",
+    "pages/myCollectionInf/myCollectionInf"
 
   ],
   "window": {
@@ -21,9 +28,9 @@
       "selectedIconPath": "/images/首页 (1).png"
 
     }, {
-      "pagePath": "pages/demo01/demo01",
+      "pagePath": "pages/demo02/demo02",
       "text": "发布",
-      "iconPath": "/images/fabu.png/",
+      "iconPath": "/images/发布.png",
       "selectedIconPath": "/images/发布 (1).png"
 
 
