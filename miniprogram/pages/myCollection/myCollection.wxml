@@ -1,0 +1,9 @@
+<view>
+  <view hover-class="pressed_view" class="goods" wx:for="{{myCollectionGoods}}" wx:key="index" bindtap="goods_detail" data-value="{{index}}">
+    <image src="{{item.goodsPic[0]}}" mode="scaleToFill"></image>
+    <view class="goods_inf">
+      <text>{{item.goodsName}}</text>
+      <text>￥{{item.goodsPrice}}</text>
+    </view>
+  </view>
+</view>

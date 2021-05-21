@@ -1,0 +1,17 @@
+image {
+  margin: auto;
+  margin-top: 5rpx;
+}
+
+text {
+  background: white;
+  display: block;
+  margin: 20rpx 50rpx;
+  border-radius: 10rpx;
+  font-size: 45rpx;
+  line-height: 75rpx;
+}
+button{
+  background: white;
+  margin-bottom: 30rpx;
+}

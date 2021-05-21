@@ -1,0 +1,21 @@
+text {
+  font-size: 45rpx;
+  margin-left: 20rpx;
+
+}
+
+input {
+  background: white;
+  width: 710rpx;
+  margin: auto;
+  border-radius: 10rpx;
+  height: 80rpx;
+  font-size: large;
+  margin-bottom: 5rpx;
+  margin-top: 20rpx;
+}
+
+button {
+  background: white;
+margin-top: 10rpx;
+}

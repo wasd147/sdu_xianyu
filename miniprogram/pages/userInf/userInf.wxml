@@ -1,0 +1,7 @@
+<form bindsubmit="infor">
+  <text>您的位置：</text><input type="text" name="location" value="{{location}}" />
+  <text>您的联系QQ：</text><input type="text" name="qq" value="{{qq}}" />
+  <button form-type="reset">重置</button>
+  <button form-type="submit">保存</button>
+
+</form>

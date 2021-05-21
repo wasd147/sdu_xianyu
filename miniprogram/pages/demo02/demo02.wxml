@@ -1,0 +1,15 @@
+<form bindsubmit="upload">
+  <textarea required="true" name="goodsInf" cols="30" rows="10" placeholder="介绍商品"></textarea>
+  <input required="true" name="goodsName" type="text" placeholder="请输入商品名称" />
+  <input required="true" name="goodsPrice" type="text" placeholder="请输入商品价格" />
+  <view class="kind_view">
+    <checkbox-group name="kind">
+      <checkbox name="" wx:for="{{kind}}" wx:key="index" value="{{item}}">{{item}}</checkbox>
+    </checkbox-group>
+  </view>
+  <view class="img_view">
+    <image wx:for="{{tempFilePaths}}" wx:key="index" src="{{item}}"></image>
+  </view>
+  <button bindtap="chooseImage" style="background:white ;margin-bottom:20rpx">添加图片</button>
+  <button form-type="submit" style="background:white">上传</button>
+</form>

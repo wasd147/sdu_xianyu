@@ -1,0 +1,10 @@
+<image mode="widthFix" wx:for="{{goodsData.goodsPic}}" wx:key="index" src="{{item}}"></image>
+<view>
+  <text selectable space="ensp" decode="{{true}}">&ensp;&ensp;&ensp;&ensp;{{goodsData.goodsInf}}</text>
+  <text selectable>发布者地址: {{goodsOwner.location}}</text>
+  <text selectable>发布者QQ：{{goodsOwner.qq}}</text>
+  <text selectable>价格：￥{{goodsData.goodsPrice}}</text>
+</view>
+<view>
+  <button bindtap="delete">下架</button>
+</view>
